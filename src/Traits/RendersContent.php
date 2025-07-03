@@ -8,7 +8,7 @@ use function app;
 
 trait RendersContent
 {
-    public function render(string $column = null): string
+    public function render(string|null $column = null): string
     {
         $column = $column ?: $this->getContentColumn();
         $renderer = app(ContentRenderer::class);
