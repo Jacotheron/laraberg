@@ -318,7 +318,7 @@ class WordPressBlockParser
      */
     public function freeform(string $innerHTML): WordPressBlockParserBlock
     {
-        return new WordPressBlockParserBlock(null, $this->emptyAttrs, [], $innerHTML, [$innerHTML]);
+        return new WordPressBlockParserBlock('freeform', $this->emptyAttrs, [], $innerHTML, [$innerHTML]);
     }
 
     /**
