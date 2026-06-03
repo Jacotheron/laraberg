@@ -26,7 +26,7 @@ class BlockTypeRegistry
     public function register(
         string $name,
         array $attributes = [],
-        callable $renderCallback = null
+        callable|null $renderCallback = null
     ): void {
         $this->blockTypes[] = new BlockType($name, $attributes, $renderCallback);
     }
