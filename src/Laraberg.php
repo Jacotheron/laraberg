@@ -9,7 +9,7 @@ class Laraberg
     public static function registerBlockType(
         string $name,
         array $attributes = [],
-        callable $renderCallback = null
+        callable|null $renderCallback = null
     ): void {
         /** @var BlockTypeRegistry $registry */
         $registry = app(BlockTypeRegistry::class);
