@@ -22,7 +22,7 @@ class BlockType
     public function __construct(
         string $name,
         array $attributes = [],
-        callable $renderCallback = null
+        callable|null $renderCallback = null
     ) {
         $this->name = $name;
         $this->attributes = $attributes;
