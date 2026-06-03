@@ -66,7 +66,7 @@ class WordPressBlockParserFrame
      * @param int|null                  $prevOffset       Byte offset into document for after parse token ends.
      * @param int|null                  $leadingHtmlStart Byte offset into document where leading HTML before token starts.
      */
-    public function __construct(WordPressBlockParserBlock $block, int $tokenStart, int $tokenLength, int $prevOffset = null, ?int $leadingHtmlStart = null)
+    public function __construct(WordPressBlockParserBlock $block, int $tokenStart, int $tokenLength, int|null $prevOffset = null, ?int $leadingHtmlStart = null)
     {
         $this->block            = $block;
         $this->tokenStart       = $tokenStart;
